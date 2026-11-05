@@ -1,0 +1,39 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode user",
+    "dev:admin": "vite --mode admin",
+    "build": "vue-tsc --noEmit && vite build --mode user",
+    "build:admin": "vue-tsc --noEmit && vite build --mode admin",
+    "preview": "vite preview --mode user",
+    "preview:admin": "vite preview --mode admin",
+    "typecheck": "vue-tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "icons:generate": "node scripts/generate-icons.mjs && prettier --write src/assets/icons.ts"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.145",
+    "@iconify/vue": "^5.0.3",
+    "axios": "^1.20.0",
+    "element-plus": "^2.14.7",
+    "vue": "^3.5.42",
+    "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.6.5",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "prettier": "^3.9.10",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "5.9.3",
+    "unplugin-vue-components": "^32.1.0",
+    "vite": "^8.3.0",
+    "vue-tsc": "^3.3.13"
+  }
+}

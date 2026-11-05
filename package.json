@@ -1,0 +1,8 @@
+{
+  "name": "campus-parcel-station",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --dir frontend run dev",
+    "dev:admin": "pnpm --dir frontend run dev:admin"
+  }
+}
